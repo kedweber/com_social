@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0.0">
+	<name>MOD_SOCIALMEDIA</name>
+	<creationDate>Februari 2014</creationDate>
+    <author>Dave Li</author>
+    <authorEmail>dave@moyoweb.nl</authorEmail>
+    <authorUrl>http://www.moyoweb.nl</authorUrl>
+    <copyright>Copyright (C) 2006 - 2014 Moyo Web Architects (ICTIP B.V). All rights reserved.</copyright>
+    <license>Commercial</license>
+    <version>1.0.0</version>
+    <description>MOD_SOCIALMEDIA_DESC</description>
+	<files>
+		<file module="mod_socialmedia">mod_socialmedia.php</file>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+                        name="visible"
+                        type="list"
+                        label="MOD_SOCIALMEDIA_FIELD_INITIALLY_SHOW_LABEL"
+                        description="MOD_SOCIALMEDIA_FIELD_INITIALLY_SHOW_DESC">
+					<option value="twitter">Twitter</option>
+					<option value="facebook">Facebook</option>
+				</field>
+			</fieldset>
+
+			<fieldset name="twitter">
+				<field
+                        name="show_twitter"
+                        type="checkbox"
+                        label="MOD_SOCIALMEDIA_FIELD_SHOW_TWITTER_LABEL"
+                        description="MOD_SOCIALMEDIA_FIELD_SHOW_TWITTER_DESC" />
+				<field
+						name="username"
+						type="text"
+						default=""
+						label="MOD_SOCIALMEDIA_FIELD_TWITTER_USERNAME_LABEL"
+						description="MOD_SOCIALMEDIA_FIELD_TWITTER_USERNAME_DESC">
+				</field>
+				<field
+						name="hashtags"
+						type="text"
+						default=""
+						label="MOD_SOCIALMEDIA_FIELD_TWITTER_HASHTAGS_LABEL"
+						description="MOD_SOCIALMEDIA_FIELD_TWITTER_HASHTAGS_DESC">
+				</field>
+			</fieldset>
+
+			<fieldset name="facebook">
+				<field
+                        name="show_facebook"
+                        type="checkbox"
+                        label="MOD_SOCIALMEDIA_FIELD_SHOW_FACEBOOK_LABEL"
+                        description="MOD_SOCIALMEDIA_FIELD_SHOW_FACEBOOK_DESC" />
+				<field
+						name="facebook_user"
+						type="text"
+						default=""
+						label="MOD_SOCIALMEDIA_FIELD_FACEBOOK_USER_LABEL"
+						description="MOD_SOCIALMEDIA_FIELD_FACEBOOK_USER_DESC">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

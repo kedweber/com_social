@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5" method="upgrade">
+    <name>Socialmedia</name>
+    <author>Dave Li</author>
+    <creationDate>Februari 2013</creationDate>
+    <packagename>socialmedia</packagename>
+    <version>1.0.0</version>
+    <url>http://www.moyoweb.nl/</url>
+    <packager>Dave Li</packager>
+    <packagerurl>http://www.moyoweb.nl/</packagerurl>
+    <description>Socialmedia Package</description>
+    <files folder="packages">
+        <file type="component" id="socialmedia">components/socialmedia</file>
+        <file type="component" id="oauth">components/oauth</file>
+        <file type="module" id="socialmedia" client="site">modules/mod_socialmedia</file>
+    </files>
+</extension>
