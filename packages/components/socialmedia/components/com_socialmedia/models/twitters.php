@@ -20,18 +20,25 @@ class ComSocialmediaModelTwitters extends ComSocialmediaModelDefault
         if($state->username && empty($state->hashtags)) {
             $url = 'https://api.twitter.com/1.1/statuses/user_timeline.json?screen_name=' . $state->username;
         } else if($state->hashtags && empty($state->username)) {
-            $url = 'https://api.twitter.com/1.1/search/tweets.json?q=' . urlencode($state->hashtags) . '&src=hash';
+            $url = 'https://api.twitter.com/1.1/search/tweets.json?q=' . urlencode($state->hashtags) . '&src=hash&utc_offset=' . (2 * 3600);
         } else if($state->hashtags && $state->username) {
             $url = 'https://api.twitter.com/1.1/search/tweets.json?q=' . urlencode('from:' . $state->username . ' ' .$state->hashtags);
         }
 
+		$data = json_decode(
+			$this->getService('com://site/oauth.model.oauths')
+				->service('twitter')
+				->url($url .'&count=' . $state->limit)
+				->getItem()
+			, true
+		);
+
+		if($data['statuses']) {
+			$data = $data['statuses'];
+		}
+
         return $this->getRowset(array(
-            'data' => json_decode(
-                $this->getService('com://site/oauth.model.oauths')
-                    ->service('twitter')
-                    ->url($url .'&count=' . $state->limit)
-                    ->getItem()
-                , true
-            )));
+			'data' => $data
+		));
     }
 }
