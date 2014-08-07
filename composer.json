@@ -1,9 +1,9 @@
 {
-    "name": "moyo/social",
+    "name": "cta/social",
     "type": "joomlatools-installer",
     "description": "Social Package",
     "keywords": ["joomla", "social"],
-    "homepage": "https://moyoweb.assembla.com/code/moyo-content/git-29/nodes",
+    "homepage": "https://github.com/cta-int/social",
     "authors": [
         {
             "name": "Dave Li",
