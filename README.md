@@ -25,16 +25,16 @@ section:
 
 ```json
 {
-    "name": "moyo/social",
+    "name": "cta/social",
     "type": "vcs",
-    "url": "https://git.assembla.com/moyo-content.social.git"
+    "url": "https://github.com/cta-int/social.git"
 }
 ```
 
 The require section should contain the following line:
 
 ```json
-    "moyo/social": "1.0.*",
+    "cta/social": "1.0.*",
 ```
 
 Afterward, just run `composer update` from the root of your Joomla project.
