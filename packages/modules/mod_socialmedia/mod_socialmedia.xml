@@ -37,14 +37,12 @@
 				<field
 						name="username"
 						type="text"
-						default=""
 						label="MOD_SOCIALMEDIA_FIELD_TWITTER_USERNAME_LABEL"
 						description="MOD_SOCIALMEDIA_FIELD_TWITTER_USERNAME_DESC">
 				</field>
 				<field
 						name="hashtags"
 						type="text"
-						default=""
 						label="MOD_SOCIALMEDIA_FIELD_TWITTER_HASHTAGS_LABEL"
 						description="MOD_SOCIALMEDIA_FIELD_TWITTER_HASHTAGS_DESC">
 				</field>
@@ -59,11 +57,31 @@
 				<field
 						name="facebook_user"
 						type="text"
-						default=""
 						label="MOD_SOCIALMEDIA_FIELD_FACEBOOK_USER_LABEL"
 						description="MOD_SOCIALMEDIA_FIELD_FACEBOOK_USER_DESC">
 				</field>
 			</fieldset>
+
+            <fieldset name="rss">
+                <field
+                        name="show_rss"
+                        type="checkbox"
+                        label="MOD_SOCIALMEDIA_FIELD_SHOW_RSS_LABEL"
+                        description="MOD_SOCIALMEDIA_FIELD_SHOW_RSS_DESC" />
+                <field
+                        name="rss_button_label"
+                        type="text"
+                        required="1"
+                        label="MOD_SOCIALMEDIA_FIELD_RSS_BUTTON_LABEL_LABEL"
+                        description="MOD_SOCIALMEDIA_FIELD_RSS_BUTTON_LABEL_DESC"
+                        default="Social Reporting" />
+                <field
+                        name="rss_source_id"
+                        type="text"
+                        label="MOD_SOCIALMEDIA_FIELD_RSS_SOURCE_LABEL"
+                        description="MOD_SOCIALMEDIA_FIELD_RSS_SOURCE_DESC">
+                </field>
+            </fieldset>
 		</fields>
 	</config>
 </extension>
