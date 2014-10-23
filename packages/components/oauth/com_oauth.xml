@@ -13,17 +13,14 @@
 
     <files folder="components/com_oauth">
         <file>oauth.php</file>
-
         <folder>models</folder>
     </files>
 
     <administration>
         <files folder="administrator/components/com_oauth">
             <file>oauth.php</file>
-
-            <folder>models</folder>
+            <folder>language</folder>
         </files>
-
         <menu>COM_OAUTH</menu>
     </administration>
 </extension>
