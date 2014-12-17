@@ -36,6 +36,12 @@ class ComSocialmediaModelTwitters extends ComSocialmediaModelDefault
 		if($data['statuses']) {
 			$data = $data['statuses'];
 		}
+        
+        foreach($data as $index => $tweet) {
+            if($tweet['retweeted_status']) {
+                $data[$index]['text'] = $tweet['retweeted_status']['text'];
+            }
+        }
 
         return $this->getRowset(array(
 			'data' => $data
