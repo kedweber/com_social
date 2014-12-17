@@ -1,0 +1,1 @@
+# pkg_social CHANGELOG### 1.0.5 17-12-2014 - Added changelog, updated oauth.xml
