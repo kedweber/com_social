@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <extension type="package" version="2.5" method="upgrade">
     <name>Socialmedia</name>
-    <author>Dave Li</author>
+    <author>Moyo Web Architects</author>
     <creationDate>Februari 2013</creationDate>
     <packagename>socialmedia</packagename>
-    <version>1.0.4</version>
+    <version>1.0.5</version>
     <url>http://www.moyoweb.nl/</url>
-    <packager>Dave Li</packager>
+    <packager>Moyo Web Architects</packager>
     <packagerurl>http://www.moyoweb.nl/</packagerurl>
     <description>Socialmedia Package</description>
     <files folder="packages">
