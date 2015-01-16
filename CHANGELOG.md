@@ -1,1 +1,1 @@
-# pkg_social CHANGELOG### 1.0.5 17-12-2014 - Added changelog, updated oauth.xml
+# pkg_social CHANGELOG### 1.0.6 - 16 January 2015* fixed xml symlink for oauth frontend* Replace RT-ed tweets with the original. This prevents unneeded truncation of RTs.### 1.0.5 - 17 december 2014* Added changelog* updated oauth.xml
