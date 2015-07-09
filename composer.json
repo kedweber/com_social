@@ -1,9 +1,9 @@
 {
-    "name": "cta/social",
+    "name": "moyo/com_social",
     "type": "joomlatools-installer",
     "description": "Social Package",
     "keywords": ["joomla", "nooku", "social"],
-    "homepage": "https://github.com/cta-int/social",
+    "homepage": "https://github.com/kedweber/com_social",
     "authors": [
         {
             "name": "Dave Li",
